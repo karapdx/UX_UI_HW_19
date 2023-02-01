@@ -1,0 +1,251 @@
+/*------------------------------------
+ *   GLOBAL COLORS
+ *------------------------------------*/
+
+:root {
+    --dark: #1d1d1d;
+    --light: #f8f8f8;
+    --accent: #efefec;
+}
+
+/*------------------------------------
+ *  CUSTOM FONT
+ *------------------------------------*/
+
+ @font-face {
+    font-family: 'Aktiv Grotesk';
+    src: url('path/to/aktiv-grotesk-webfont.woff2') format('woff2'),
+         url('path/to/aktiv-grotesk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'PP Fragment Regular';
+    src: url('path/to/PPFragment-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+
+
+/*------------------------------------
+ *   GLOBAL STYLES
+ *------------------------------------*/
+
+ body {
+    background-color: var(--dark);
+}
+
+p {
+    color: var(--light);
+    font-family: 'Aktiv Grotesk', sans-serif;
+}
+
+h1 {
+    color: var(--light);
+}
+
+h2 {
+    color: var(--light);
+    margin-top:250px;
+    margin-left: 200px;
+    width:35%;
+}
+
+h3 {
+    color:var(--light);
+}
+
+h4 {
+    color:var(--light);
+}
+h1 {
+    font-family: 'PP Fragment Regular', sans-serif;
+  }
+
+
+/*------------------------------------
+ *   HEADER AND NAV
+ *------------------------------------*/
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav {
+    width: 70%;
+    padding: 1%;
+  }
+  
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding-bottom:50px;
+  }
+  
+  header h1, nav {
+    display: inline-block;
+  }
+
+nav ul {
+    list-style-type: none;
+    margin-left:640px;
+}
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: var(--light);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--light);
+    position: relative;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--light);
+    transition: width 0.3s ease-in;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+
+/*------------------------------------
+ *   FIRST SECTION
+ *------------------------------------*/
+
+.heroImg img {
+    width: 30%;
+    margin-left: 270px;
+}
+
+.heroImg {
+    float: left; 
+    padding:0;
+    background-color:var(--dark);
+  }
+  
+  h2, p {
+    overflow: hidden;
+    float: right;
+  }
+
+   /*------------------------------------
+ * My Work SECTION
+ *------------------------------------*/
+
+ .myWork {
+    background-color:var(--light);
+ }
+
+  /*------------------------------------
+ *  EXPERTISE SECTION
+ *------------------------------------*/
+
+ .mySkills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mySkills p {
+    width: 100%;
+    text-align: right;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+
+  /*------------------------------------
+ *   FOOTER
+ *------------------------------------*/
+ footer {
+    background-color: var(--dark); /* set the background color of the footer */
+    color: var(--light); /* set the text color of the footer */
+    padding: 30px 0; /* set the padding of the footer */
+}
+
+footer h4 {
+    margin-bottom: 20px; /* set the margin bottom of the h4 heading */
+}
+
+footer ul {
+    list-style-type: none; /* remove the bullet points from the lists */
+    margin: 0; /* remove the margin from the lists */
+    padding: 0; /* remove the padding from the lists */
+}
+
+footer li {
+    margin-bottom: 10px; /* set the margin bottom of the list items */
+}
+
+footer a {
+    color: var(--light); /* set the link color */
+    text-decoration: none; /* remove the underline from the links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* add an underline to the links on hover */
+}
+
+.social-links a {
+    font-size: 16px;
+
+}
+
+/*------------------------------------
+ *  ACCORDIAN MENU
+ *------------------------------------*/
+
+ .accordion {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .accordion-body {
+    padding: 30px;
+    display: none;
+  }
+  
+  .toggle {
+    font-size: 20px;
+  }

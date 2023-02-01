@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+</html>
+<body>
+</body>
+<script src="js/index.js"></script>
+</html>
+
+<header>
+    <h1>Kara Thompson</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#emailme">Email Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="heroImg">
+    <div class="content">
+      <img src="https://images.squarespace-cdn.com/content/v1/62843b350ac063150294b3ff/8ae0aba3-2419-4a00-8b19-e28c32aa9c36/Kara_Seattle.jpeg?format=1000w" alt="Your Picture">
+      <h2>
+      Digital designer with a specialization in UX/UI Design currently based in Portland, Oregon
+      </h2>
+      <p>
+        Hello! I'm Kara, a designer creating beautiful & unique experiences for humans. 
+      </p>
+    </div>
+  </section>
+
+
+<section class="myWork">
+    <h1>My Work</h1>
+    <div class="workGrid">
+      <div>
+        <img src="https://images.squarespace-cdn.com/content/v1/62843b350ac063150294b3ff/0be4bb18-15fb-408e-9c4a-e85665f6ef48/smartmockups_lb4ad45q.jpg?format=2500w" alt="project1" style="width: 70%;">
+      </div>
+      <div>
+        <h4>Project 1</h4>
+        <p>Goorin Brothers</p>
+        <button>View Project</button>
+      </div>
+    </div>
+    <h3>View all projects</h3>
+  </section>
+
+<section class="mySkills">
+  <h1>Design Expertise</h1>
+  <div class="flexContainer">
+    <div>
+      <p>User Experience & Interfaces</p>
+    </div>
+    <div>
+      <p>Wireframing & Prototyping</p>
+    </div>
+    <div>
+      <p>Website Design</p>
+    <div>
+        <p>User Research</p>
+      </div>
+      <div>
+        <p>Information Architecture</p>
+      </div>
+      <div>
+        <p>Branding</p>
+      </div>
+  </div>
+</section>
+
+<!-- My Work Section Constructed using CSS Grid -->
+<section class="workGrid">
+    <div class="header">Header</div>
+    <div class="nav">Nav</div>
+    <div class="main">Main</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="footer">Footer</div>
+  </section>
+  
+  <style>
+    .workGrid {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 25% 50% 25%;
+      grid-template-areas:
+        "header header header"
+        "nav main sidebar"
+        "footer footer footer";
+    }
+    
+    .header {
+      grid-area: header;
+      background-color: lightgray;
+    }
+    
+    .nav {
+      grid-area: nav;
+      background-color: lightblue;
+    }
+    
+    .main {
+      grid-area: main;
+      background-color: lightgreen;
+    }
+    
+    .sidebar {
+      grid-area: sidebar;
+      background-color: lightyellow;
+    }
+    
+    .footer {
+      grid-area: footer;
+      background-color: lightgray;
+    }
+  </style>
+
+<style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    .box {
+      width: 20%;
+      background-color: lightblue;
+      padding: 1em;
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 25% 50% 25%;
+      grid-template-areas:
+        "header header header"
+        "nav main sidebar"
+        "footer footer footer";
+    }
+  
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+    
+      .box {
+        width: 100%;
+      }
+    
+      .grid-container {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+          "header"
+          "main"
+          "sidebar"
+          "footer";
+      }
+    }
+  </style>
+
+
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-header">Item 1 <span class="toggle">+</span></div>
+    <div class="accordion-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">Item 2 <span class="toggle">+</span></div>
+    <div class="accordion-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">Item 3 <span class="toggle">+</span></div>
+    <div class="accordion-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header">Item 4 <span class="toggle">+</span></div>
+    <div class="accordion-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <h4>About Us</h4>
+                <p>UX/UI Design Portfolio</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email: karavithomp@gmail.com</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4>Follow</h4>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <p>Copyright &copy; Kara Thompson 2023</p>
+        </div>
+    </div>
+</footer>
+  
+  
+  
+  
+
+
+  
